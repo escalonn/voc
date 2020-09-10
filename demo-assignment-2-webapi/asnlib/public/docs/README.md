@@ -11,8 +11,7 @@
 
 </header>
 
-# Demo assignment 2: ASP.NET Core Web API
-
+# Lab assignment 2: API
 
 ## Goal
 
@@ -48,8 +47,8 @@ The server will be listening on `http://localhost:61106`.
 
 Your code will be run against a hidden test project named *ClientSide.Grader*. All tests must pass to receive a passing score.
 
-When you are ready, click the **SUBMIT** button.
+When you are ready, click the **Submit** button.
 
-Please wait a minute or two, then click "Grade" to see your score.
+Please wait a minute or two, then click **Grade** to see your score.
 
-You may also click "Grading Report" to get additional details.
+You may also click **Grading Report** to get additional details.

@@ -11,7 +11,7 @@
 
 </header>
 
-# Demo assignment 3: ASP.NET Core MVC Web App
+# Lab assignment 3: MVC
 
 ## Goal
 
@@ -49,14 +49,14 @@ Go to the *BindViews* directory and run:
 dotnet run
 ```
 
-The app will be listening on `http://localhost:5000`. Click "desktop" at the top of the Vocareum UI to interact with it in a web browser.
+The app will be listening on `http://localhost:5000`. Press the **desktop** button and open the web browser to interact with it.
 
 ## Submitting your work
 
 Your code will be run against a hidden test project named *BindViews.Grader*. All tests must pass to receive a passing score.
 
-When you are ready, click the **SUBMIT** button.
+When you are ready, click the **Submit** button.
 
-Please wait a minute or two, then click "Grade" to see your score.
+Please wait a minute or two, then click **Grade** to see your score.
 
-You may also click "Grading Report" to get additional details.
+You may also click **Grading Report** to get additional details.
