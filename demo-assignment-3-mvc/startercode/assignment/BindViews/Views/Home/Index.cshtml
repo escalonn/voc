@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style-sheet.css" />
+</head>
+<body>
+    <h1>Restaurant Information</h1>
+    <div>
+        <p><b>Name</b>: @ViewBag.Name</p>
+        <hr />
+        <p><b>Address</b>: @ViewBag.Address</p>
+        <hr />
+        <p><b>Speciality</b>: @ViewBag.Speciality</p>
+        <hr />
+        <p><b>Is Open</b>: @ViewBag.Open</p>
+        <hr />
+        <p><b>Rating</b>: @ViewBag.Review</p>
+    </div>
+</body>
+</html>
