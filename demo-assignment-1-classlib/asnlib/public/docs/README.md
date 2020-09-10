@@ -11,13 +11,13 @@
 
 </header>
 
-# C# Lab Assignment
+# Lab Assignment 1: C#
 
 ## Intro to cloud lab environment
 
 Each assignment entered from RevaturePro via the **Go to lab** button will take you to an environment like this one. Each assignment's environment is separate from the next, so it's fine to work on more than one before finishing the first.
 
-Here you have access to the files you need to create or edit via an Ubuntu Linux virtual machine. There is an IDE for developing your solutions, as well as a desktop environment when some visual output is important (like for ASP.NET Core MVC), and both use the same file system. The assignment will usually be completed in the `~/assignment` directory.
+Here you have access to the files you need to create or edit via an Ubuntu Linux virtual machine. There is an IDE for developing your solutions, as well as a desktop environment when some visual output is important (e.g. with ASP.NET MVC), and both use the same file system. The assignment will usually be completed in the `~/assignment` directory.
 
 As long as your files are saved, you can safely close the tab and the files will be available the next time you visit the assignment from RevaturePro.
 
@@ -25,17 +25,19 @@ Unless the readme says otherwise, you can submit an assignment as many times as 
 
 ### Interface
 
-On the right is this readme. It can be accessed again at any time from the **Readme** button at top right. It will contain the directions for the selected assignment.
+On the right is this readme. It can be accessed again at any time from the **Readme** button at top right. It will contain the directions for the selected assignment. You can resize the panels to have the readme take up less room, and also hit a small minimize toggle button at the top right.
 
-On the left is [Theia](https://theia-ide.org/). This is an IDE running in the browser based on [Visual Studio Code](https://code.visualstudio.com/). The basics of the interface are the same as in VS Code, and you can expect keyboard shortcuts to work similarly, even in the browser, so long as the editor is in focus. The editor has the home directory `~` open.
+On the left is [Theia](https://theia-ide.org/). This is an IDE running in the browser based on [Visual Studio Code](https://code.visualstudio.com/). The basics of the interface are the same as in VS Code, and you can expect keyboard shortcuts to work similarly, even in the browser, so long as the editor is in focus. The editor has the home directory `~` open. You'll want to ignore most of the visible folders, open the `assignment` folder, and work within that. `` Ctrl+` `` will toggle open the terminal.
 
-At the top left, the **desktop** button allows you to enter a desktop environment. This allows you to use other applications as part of your development, including a web browser and VS Code itself.
+At the top left, the **desktop** button allows you to enter a desktop environment. This allows you to use other applications as part of your development, including a web browser and VS Code itself. The **theia** button is not useful.
+
+At the top right, the **Submit** button will submit the code in the `assignment` directory for grading. It takes some time for this process to run, but after ~30 seconds, clicking **Grades** and **Grading Report** will show the latest results. If you do not get a passing grade, the grading report will explain why. The **Submission Report** and **End Lab** buttons are not useful.
 
 ## Goal
 
 Your assignment is to implement an `IsPrime` method and unit tests for it.
 
-Code coverage should be 100% for the `Prime.Service` project based on the `Prime.Tests` test project.
+Code coverage should be 100% for the `Prime.Service` project, based on the `Prime.Tests` test project.
 
 ## Technologies
 
@@ -72,8 +74,8 @@ This uses the [coverlet.collector](https://github.com/coverlet-coverage/coverlet
 
 Your code will be run against both your test project and a hidden test project named `Prime.Grader`. All tests must pass to receive a passing score. Code coverage will be computed based on the `Prime.Tests` project only.
 
-When you are ready, click the **SUBMIT** button.
+When you are ready, click the **Submit** button.
 
-Please wait a minute or two, then click "Grade" to see your score.
+Please wait a minute or two, then click **Grade** to see your score.
 
-You may also click "Grading Report" to get additional details.
+You may also click **Grading Report** to get additional details.
