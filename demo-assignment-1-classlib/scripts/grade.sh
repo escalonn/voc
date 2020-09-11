@@ -17,7 +17,6 @@ if [ -n "$coverage" ]; then
   percentage=`awk -vc=$coverage 'BEGIN{printf "%.2f" ,c * 100}'`
   echo "" >> results.txt
   echo "Code coverage: ${percentage}%" >> results.txt
-  if ((`bc <<< "$coverage < 1"`)); then
   if [ "${percentage%%.*}" -lt 100 ]; then
     fail=$((fail+1))
     echo "Code coverage does not meet requirement" >> results.txt
