@@ -12,12 +12,13 @@ dotnet test Prime.Grader | tee results.txt
 fail=`egrep -i "failed|error" results.txt | wc -l`
 
 coverage=`sed -n 2p Prime.Tests/*/*/coverage.*.xml | cut -d'"' -f2`
-percentage=`awk -vc=$coverage 'BEGIN{printf "%.2f" ,c * 100}'`
 
 if [ -n "$coverage" ]; then
+  percentage=`awk -vc=$coverage 'BEGIN{printf "%.2f" ,c * 100}'`
   echo "" >> results.txt
   echo "Code coverage: ${percentage}%" >> results.txt
   if ((`bc <<< "$coverage < 1"`)); then
+  if [ "${percentage%%.*}" -lt 100 ]; then
     fail=$((fail+1))
     echo "Code coverage does not meet requirement" >> results.txt
   else
