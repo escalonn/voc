@@ -11,7 +11,7 @@
 
 </header>
 
-# Lab Assignment 1: C#
+# Lab Assignment 1: C# #
 
 ## Intro to cloud lab environment
 
