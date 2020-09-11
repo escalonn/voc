@@ -33,7 +33,6 @@ if [ "$fail" == "0" ]; then
   echo "Your program meets all requirements." >> $vocareumReportFile
 else
   score=0
-  echo "Score: ${score}/${maxscore}" >> $vocareumReportFile
   echo "Your program does not meet all requirements." >> $vocareumReportFile
 fi
 echo "Score: ${score}/${maxscore}" >> $vocareumReportFile
