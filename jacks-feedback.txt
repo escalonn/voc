@@ -19,3 +19,17 @@ third assignment (mvc views)
     bit easy
     didnt finish yes, didnt check on desktop part yet
     grade and grade report separation confusing
+
+--
+
+didnt notice desktop environment despite instructions in readme
+browser would sometimes crash on google search
+ubuntu options like lock screen, logout, bit confusing
+    should mention that
+warning - unable to bind to localhost for ipv6
+    should check this out to make sure it's not an issue, but it's probably not
+2nd assignment
+    good difficulty
+3rd assignment, ways to make it more challenging
+    convert between viewmodels and domain model
+    display a list of items, with tag helpers and html helpers
