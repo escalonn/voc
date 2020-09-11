@@ -1,6 +1,6 @@
-namespace ServerSide.Models
+namespace Assignment.Grader
 {
-    public class GroceryStore
+    internal class GroceryStore
     {
         public int Id { get; set; }
         public string Name { get; set; }

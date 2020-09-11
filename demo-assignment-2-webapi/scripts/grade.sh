@@ -3,8 +3,8 @@
 echo VOC_NO_REPORT_OUTPUT > $vocareumReportFile
 
 cd assignment
-cp -r $ASNLIB/ClientSide.Grader .
-dotnet sln add ClientSide.Grader
+cp -r $ASNLIB/Assignment.Grader .
+dotnet sln add Assignment.Grader
 
 dotnet test --filter Requires!=Server | tee results.txt
 

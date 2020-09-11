@@ -15,7 +15,35 @@
 
 ## Goal
 
-Your assignment is to implement a Web API which interacts with another Web API.
+Your assignment is to complete the implementation of two REST APIs which interact together as client and server in a layered system.
+
+The server API allows creating and accessing grocery store resources:
+
+```
+GET /api/store:
+    status 200 with all the grocery stores.
+    (already implemented)
+POST /api/store:
+    should create a store based on the request body.
+    status 201 with Location header and a copy of the created store.
+GET /api/store/{id}:
+    status 200 with the store with the given unique integer ID.
+    (already implemented)
+```
+
+The client API does not store data itself, but exposes some extra grocery store operations by communicating with the server API:
+
+```
+GET /api/store/count:
+    status 200 with the number of stores existing on the server API.
+    status 502 if the server API fails or is not running.
+POST /api/store/createthree:
+    should create three stores on the server API. no request body needed; client API can hardcode the store details.
+    status 204 on success.
+    status 502 if the server API fails or is not running.
+```
+
+Use media type application/json for request and response bodies.
 
 ## Technologies
 
@@ -23,17 +51,17 @@ Your assignment is to implement a Web API which interacts with another Web API.
 
 ## Directory structure
 
-Our starter code contains two applications implementing REST APIs, one acting as a client and the other as a server. The server is already implemented.
+Our starter code contains one ASP.NET Core web API, the server-side, partially implemented.
+
 ```
 assignment/
     assignment.sln
-    ClientSide/
     ServerSide/
 ```
 
-You will be responsible for updating the code in *ClientSide/*.
+You will need to finish implementing necessary functionality in `ServerSide`, as well as create another API (`ClientSide/ClientSide.csproj`) to fulfill the requirements. Don't forget to add it to the solution.
 
-## Running the server-side API
+## Running the server API
 
 Go to the *ServerSide* directory and run:
 
@@ -41,11 +69,11 @@ Go to the *ServerSide* directory and run:
 dotnet run
 ```
 
-The server will be listening on `http://localhost:61106`.
+The server will be listening on `http://localhost:5001`.
 
 ## Submitting your work
 
-Your code will be run against a hidden test project named *ClientSide.Grader*. All tests must pass to receive a passing score.
+Your code will be run against a hidden test project named *Assignment.Grader*. All tests must pass to receive a passing score.
 
 When you are ready, click the **Submit** button.
 
