@@ -18,6 +18,11 @@ namespace Prime.Tests
             var result = _primeService.IsPrime(1);
 
             Assert.False(result, "1 should not be prime");
+
+            _primeService.IsPrime(-1);
+            _primeService.IsPrime(0);
+            _primeService.IsPrime(20);
+            _primeService.IsPrime(13);
         }
     }
 }
