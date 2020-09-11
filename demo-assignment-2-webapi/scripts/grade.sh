@@ -6,10 +6,12 @@ cd assignment
 cp -r $ASNLIB/ClientSide.Grader .
 dotnet sln add ClientSide.Grader
 
+dotnet test --filter Requires!=Server | tee results.txt
+
 nohup dotnet run -p ServerSide &
 echo $! > serverside_pid.txt
 
-dotnet test | tee results.txt
+dotnet test --filter Requires=Server | tee results.txt
 
 kill -9 `cat serverside_pid.txt`
 
@@ -38,4 +40,4 @@ curl -d "{\"score\":$score}" \
 -H "Content-Type: application/json" \
 -H "EXTERNAL_CLIENT_ID: Vk9DQVJFVU1fTEFC" \
 -H "EXTERNAL_CLIENT_TOKEN: ODkyNGRhYWQ1MzBkNzJlYWNhNzJkZTNjMzBjYzhhZWM" \
--X PUT  https://qa-ms.revature.com/apigateway/lab/vocareum/users/$VOC_USERID/parts/$VOC_PARTID >> $vocareumReportFile
+-X PUT  https://app-ms.revature.com/apigateway/lab/vocareum/users/$VOC_USERID/parts/$VOC_PARTID >> $vocareumReportFile
