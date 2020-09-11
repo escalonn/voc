@@ -1,0 +1,21 @@
+pretty cool
+first time loaded lab, frozen
+    close browser, reload, fine after that
+terminal working fine
+click on fullscreen button
+    the x to get back out disappears when you mouse over it, annoying
+    escape still works
+end lab -> useless UI
+    known issue, maybe we can remove that button?
+first assignment (prime)
+    liked the question's difficulty level
+    pressing F5 -> launch.json, not implemented
+        we should fix this
+    debug -> launch.json, not implemented
+        we should fix this
+    no c# extension -> no intellisense/highlighting feedback, no emmet
+        we should fix this
+third assignment (mvc views)
+    bit easy
+    didnt finish yes, didnt check on desktop part yet
+    grade and grade report separation confusing
