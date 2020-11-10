@@ -15,7 +15,7 @@
 
 ## Goal
 
-Your assignment is to convert a dynamically-typed view using ViewBag to a strongly-typed view.
+Your assignment is to improve an ASP.NET Core MVC app by converting a dynamically-typed view using ViewBag to a strongly-typed view.
 
 ## Technologies
 
