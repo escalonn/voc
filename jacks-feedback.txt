@@ -33,3 +33,12 @@ warning - unable to bind to localhost for ipv6
 3rd assignment, ways to make it more challenging
     convert between viewmodels and domain model
     display a list of items, with tag helpers and html helpers
+
+--
+
+nick's idea for asgn 3:
+    delete the view, tell the user to make a view
+    make a service class that returns some data
+        except the dependency isn't registered - he needs to do that.
+    tell the user to make a strongly typed view to display some summary stats on the data
+    but he should introduce a view model to do so, not use the original model
